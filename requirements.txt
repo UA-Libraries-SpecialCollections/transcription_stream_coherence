@@ -1,0 +1,10 @@
+# Runtime dependencies for the Language-Likeness Evaluator
+# Target Python version: 3.10+
+# Tkinter is part of the Python standard library on many desktop installs,
+# but may need to be installed separately by the operating system on Linux.
+
+numpy>=1.23
+matplotlib>=3.7
+wordfreq>=3.0
+transformers>=4.35
+torch>=2.1
