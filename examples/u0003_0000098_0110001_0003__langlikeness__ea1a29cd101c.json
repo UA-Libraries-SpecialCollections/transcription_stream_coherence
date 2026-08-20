@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-03-08T00:12:18.282656+00:00",
+  "config": {
+    "model_name": "distilgpt2",
+    "device": "auto",
+    "max_chars": 200000,
+    "min_repeat_run": 3,
+    "repeat_exclude_whitespace": true,
+    "log_ppl_good": 3.5,
+    "log_ppl_bad": 6.0,
+    "log_ppl_clip": 8.0,
+    "whitespace_target": 0.18,
+    "whitespace_range": 0.18,
+    "lm_window_std_good": 0.12,
+    "lm_window_std_bad": 0.6,
+    "lexical_remove_stopwords": true,
+    "lexical_min_token_len": 2,
+    "minhash_k": 64,
+    "minhash_seed": 1
+  },
+  "file": {
+    "path": "S:\\Digital Projects\\Dev\\language_like_noise_text_gen\\noise_test\\sanguinetti\\u0003_0000098_0110001_0003.txt",
+    "basename": "u0003_0000098_0110001_0003.txt",
+    "bytes": 1913,
+    "sha256": "ea1a29cd101cd6cdbc1b69f3f6b0690db3e0e8441662c15450ab5fef8e579fb0",
+    "modified_time_utc": "2024-10-11T16:05:16.579719+00:00"
+  },
+  "analysis": {
+    "analyzed_chars": 1913,
+    "truncated_to_max_chars": false,
+    "char_counts": {
+      "total": 1913,
+      "alpha": 1472,
+      "digit": 4,
+      "punct": 45,
+      "control": 0,
+      "whitespace": 392,
+      "other": 0,
+      "non_whitespace": 1521
+    },
+    "dictionary": {
+      "token_count": 337,
+      "oov_count": 1,
+      "oov_ratio": 0.002967359050445104
+    },
+    "lexical": {
+      "tokenization": {
+        "pattern": "[A-Za-z]+(?:'[A-Za-z]+)?",
+        "lowercase": true,
+        "min_token_len": 2,
+        "stopwords_removed": true
+      },
+      "tokens": {
+        "token_count": 325,
+        "unique_token_count": 163,
+        "type_token_ratio": 0.5015384615384615,
+        "repeat_token_ratio": 0.4984615384615385
+      },
+      "content_tokens": {
+        "token_count": 161,
+        "unique_token_count": 121,
+        "type_token_ratio": 0.7515527950310559,
+        "repeat_token_ratio": 0.24844720496894412
+      },
+      "minhash": {
+        "k": 64,
+        "seed": 1,
+        "prime": 2305843009213693951,
+        "signature_hex": [
+          "0029b581f2570f91",
+          "00322f820d6f79ce",
+          "001ecc3891cba3fe",
+          "001fd50b68af180f",
+          "000cfd4b0361650d",
+          "0030f35932beccc8",
+          "003e1d7c274278c4",
+          "0001af26c6ac73db",
+          "0060a9eee9d254e0",
+          "00b3da463ba0074f",
+          "004b695c95e374a8",
+          "0027d28fa952af1d",
+          "0000d585afe8060c",
+          "001bc29d16cf2502",
+          "0002a9de63bbbf20",
+          "00187251563f674a",
+          "0006d5872107a8a2",
+          "00a515f547658e7a",
+          "000dbb33a00d97bf",
+          "00643d04051b29cf",
+          "000c6bc4d354271c",
+          "004ef525e8183376",
+          "002d40f5f130f0c8",
+          "0063b68cf34f0dfe",
+          "0017f643305b2d78",
+          "00526c92c95d2fc3",
+          "00d5d42c8b2da5d3",
+          "001aafa0b940fafe",
+          "002b50e7d78e09d6",
+          "0040abe28a77010f",
+          "0042b8a36d720a9f",
+          "0001e7a8ae9bb61c",
+          "00507a44a9099f3b",
+          "007cabeb95554d65",
+          "00143c1bdcb97d23",
+          "003b255d34719665",
+          "000b746d7ef9f851",
+          "0089ae3428db1191",
+          "0001180f2dfe207b",
+          "009ea804cbc6df7a",
+          "0042642d4bb595b9",
+          "002880469b28767e",
+          "0033273bd0231865",
+          "00316693ae19fe2a",
+          "0072a7b312f80f32",
+          "0023525b30abc570",
+          "001a2178939330f6",
+          "00ac94f8f95639b8",
+          "00f09616e39e07e9",
+          "000e2f02cfbd07c8",
+          "0016d0d327f2baa8",
+          "002da0030e67021b",
+          "000a649f17e9accc",
+          "005a5937ebfed935",
+          "00191dfabb410ef5",
+          "004649ece3a1c066",
+          "0001e122f56dcf6a",
+          "0045b40a3acc953c",
+          "00d39205e5fc6ce4",
+          "00565d71a5d30153",
+          "00065bb741508a3e",
+          "0012723b193711e0",
+          "006ee6ada0e59b31",
+          "0053359550b710b4"
+        ]
+      }
+    },
+    "language_model": {
+      "model_name": "distilgpt2",
+      "device": "cuda",
+      "token_count": 403,
+      "avg_cross_entropy_nats": 3.4337456226348877,
+      "avg_cross_entropy_bits": 4.9538477814495385,
+      "perplexity": 30.992511867176894,
+      "avg_log_likelihood": -3.4337456226348877,
+      "total_log_likelihood": -1383.7994859218597,
+      "log_perplexity": 3.4337456226348877,
+      "window_count": 1,
+      "window_loss_mean_nats": 3.4337456226348877,
+      "window_loss_std_nats": 0.0,
+      "window_loss_p10_nats": 3.4337456226348877,
+      "window_loss_p90_nats": 3.4337456226348877,
+      "window_loss_min_nats": 3.4337456226348877,
+      "window_loss_max_nats": 3.4337456226348877
+    },
+    "features_raw": {
+      "alpha_ratio": 0.7694720334553058,
+      "digit_ratio": 0.0020909566126502874,
+      "punct_ratio": 0.023523261892315735,
+      "control_ratio": 0.0,
+      "other_ratio": 0.0,
+      "whitespace_ratio": 0.20491374803972817,
+      "non_whitespace_ratio": 0.7950862519602718,
+      "char_to_whitespace_ratio": 3.8801020408163267,
+      "repeat_run_char_ratio": 0.0,
+      "repeat_run_nonws_char_ratio": 0.0,
+      "max_repeat_run": 2,
+      "oov_ratio": 0.002967359050445104,
+      "type_token_ratio": 0.5015384615384615,
+      "repeat_token_ratio": 0.4984615384615385,
+      "content_type_token_ratio": 0.7515527950310559,
+      "content_repeat_token_ratio": 0.24844720496894412
+    },
+    "radar": {
+      "quality": {
+        "axes": [
+          "lm_quality",
+          "vocab_quality",
+          "alpha_ratio",
+          "no_digits",
+          "no_punct",
+          "no_control",
+          "no_repeats",
+          "whitespace_balance"
+        ],
+        "values": {
+          "lm_quality": 1.0,
+          "vocab_quality": 0.9970326409495549,
+          "alpha_ratio": 0.7694720334553058,
+          "no_digits": 0.9979090433873498,
+          "no_punct": 0.9764767381076843,
+          "no_control": 1.0,
+          "no_repeats": 1.0,
+          "whitespace_balance": 0.8615902886681768
+        },
+        "notes": "All axes are 0..1 where higher means more language-like."
+      },
+      "raw_scaled": {
+        "axes": [
+          "alpha_ratio",
+          "digit_ratio",
+          "punct_ratio",
+          "control_ratio",
+          "whitespace_ratio",
+          "repeat_run_char_ratio",
+          "oov_ratio",
+          "lm_log_ppl_scaled"
+        ],
+        "values": {
+          "alpha_ratio": 0.7694720334553058,
+          "digit_ratio": 0.0020909566126502874,
+          "punct_ratio": 0.023523261892315735,
+          "control_ratio": 0.0,
+          "whitespace_ratio": 0.20491374803972817,
+          "repeat_run_char_ratio": 0.0,
+          "oov_ratio": 0.002967359050445104,
+          "lm_log_ppl_scaled": 0.42921820282936096
+        },
+        "notes": "Axes are 0..1. These are mostly raw composition ratios. 'lm_log_ppl_scaled' increases with perplexity (worse). Interpret carefully."
+      },
+      "lexical": {
+        "axes": [
+          "lm_quality",
+          "vocab_quality",
+          "oov_ratio",
+          "type_token_ratio",
+          "content_type_token_ratio",
+          "content_repeat_token_ratio",
+          "repeat_run_char_ratio",
+          "whitespace_ratio"
+        ],
+        "values": {
+          "lm_quality": 1.0,
+          "vocab_quality": 0.9970326409495549,
+          "oov_ratio": 0.002967359050445104,
+          "type_token_ratio": 0.5015384615384615,
+          "content_type_token_ratio": 0.7515527950310559,
+          "content_repeat_token_ratio": 0.24844720496894412,
+          "repeat_run_char_ratio": 0.0,
+          "whitespace_ratio": 0.20491374803972817
+        },
+        "notes": "Lexical profile (0..1). Includes type-token ratios and OOV ratio. Not all axes imply 'higher is better' (e.g., oov_ratio, content_repeat_token_ratio). MinHash signature is stored under analysis.lexical.minhash for cross-item overlap estimation."
+      },
+      "quality_windowed": {
+        "axes": [
+          "lm_mean_quality",
+          "lm_best_chunk_quality",
+          "lm_worst_chunk_quality",
+          "lm_consistency",
+          "vocab_quality",
+          "oov_ratio",
+          "alpha_ratio",
+          "no_digits",
+          "digit_ratio",
+          "no_punct",
+          "punct_ratio",
+          "no_control",
+          "no_repeats",
+          "whitespace_balance",
+          "whitespace_ratio"
+        ],
+        "values": {
+          "lm_mean_quality": 1.0,
+          "lm_best_chunk_quality": 1.0,
+          "lm_worst_chunk_quality": 1.0,
+          "lm_consistency": 1.0,
+          "vocab_quality": 0.9970326409495549,
+          "alpha_ratio": 0.7694720334553058,
+          "no_digits": 0.9979090433873498,
+          "no_punct": 0.9764767381076843,
+          "no_control": 1.0,
+          "no_repeats": 1.0,
+          "whitespace_balance": 0.8615902886681768,
+          "oov_ratio": 0.002967359050445104,
+          "digit_ratio": 0.0020909566126502874,
+          "punct_ratio": 0.023523261892315735,
+          "whitespace_ratio": 0.20491374803972817
+        },
+        "notes": "All axes are 0..1. Most axes are scaled so higher means more language-like. The added raw ratio axes (oov_ratio, digit_ratio, punct_ratio, whitespace_ratio) are direct composition ratios and are not necessarily 'higher is better'. LM spokes use sliding-window loss distribution (mean/p10/p90) plus a consistency spoke (low std-dev)."
+      }
+    }
+  }
+}

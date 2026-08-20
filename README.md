@@ -172,7 +172,7 @@ analysis.features_raw.oov_ratio
 
 ### Language model metrics
 
-The application uses a Hugging Face causal language model, default `distilgpt2`, to score normalized text using sliding-window negative log-likelihood. For large texts, this avoids scoring only the first model-context window.
+The application uses a Hugging Face language model, default `distilgpt2`, to score normalized text using sliding-window negative log-likelihood. For large texts, this avoids scoring only the first model-context window.
 
 Stored language model values include:
 
@@ -313,7 +313,7 @@ These adjacent metrics are added to each loaded report in memory under `analysis
 
 ## Dataset Composition summary
 
-The Dataset Composition sub-tab summarizes a loaded report directory at a collection or batch level. It can also export a JSON summary.
+The Dataset Composition sub tab summarizes a loaded report directory at a collection or batch level. It can also export a JSON summary.
 
 The summary includes:
 
@@ -408,16 +408,9 @@ The default `requirements.txt` installs the standard CPU-capable PyTorch package
 
 ## Running the application
 
-If the repository uses the current development filename:
 
 ```bash
-python langlikeness_app_optionB_plus_raw_batch_lexoverlap_v4_dataset_composition.py
-```
-
-If the script has been renamed for release:
-
-```bash
-python langlikeness_app.py
+python transcription_stream_coherence_evaluator.py
 ```
 
 On first use of the default model, Hugging Face model and tokenizer files for `distilgpt2` will be downloaded and cached locally by the `transformers` / `huggingface_hub` stack. Subsequent runs can use the cached files.
@@ -496,24 +489,6 @@ The report is intended to be readable by the current GUI and by external analysi
 - MinHash overlap is approximate and set-based; it does not preserve word order or token frequency.
 - Filename-pattern sorting must reflect real collection order for adjacent-overlap plots to be meaningful.
 
----
-
-## Repository layout
-
-Suggested minimal layout:
-
-```text
-.
-├── README.md
-├── requirements.txt
-└── langlikeness_app.py
-```
-
-For development continuity, the current script may retain its longer filename:
-
-```text
-langlikeness_app_optionB_plus_raw_batch_lexoverlap_v4_dataset_composition.py
-```
 
 ---
 
@@ -521,10 +496,5 @@ langlikeness_app_optionB_plus_raw_batch_lexoverlap_v4_dataset_composition.py
 
 Suggested short description for reuse in repository metadata, documentation, or project reports:
 
-> Language-Likeness Evaluator is a Python/Tkinter application for ground-truth-free exploratory assessment of OCR transcript corpora. It generates per-file JSON reports with language-model, dictionary, character-composition, lexical-diversity, and MinHash lexical-overlap metrics, and provides radar, stream, heatmap, and dataset-composition views for collection-level quality review.
+> transcription_stream_coherence_evaluator.py is a Python/Tkinter application for ground-truth free sight unseen exploratory assessment of OCR transcript corpora. It generates per file JSON reports with language model, dictionary, character composition, lexical diversity, and MinHash lexical overlap metrics, and provides radar, stream, heatmap, and dataset composition views for collection level quality review.
 
----
-
-## License
-
-The current source header states MIT licensing. Add a formal `LICENSE` file to the repository before release or dissemination if this project will be shared publicly.
