@@ -11,6 +11,8 @@ The application scores each `.txt` file for language-likeness, vocabulary covera
 
 This project is intended for exploratory quality assessment of legacy OCR/HTR transcript corpora where ground-truth transcriptions are not available and where many images may have been sent through OCR regardless of whether they actually contained machine readable text.
 
+**Developer:** Jeremiah Colonna-Romano, University of Alabama Libraries Digital Services, 2025-2026
+
 ---
 
 ## Core use cases
